@@ -1,14 +1,13 @@
 package com.jafp.chifapozo.infrastructure.persistence.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
-@Data
+@Getter
+@Setter
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
@@ -26,6 +25,8 @@ public class OrderEntity {
     private List<OrderItemEntity> items;
 
     private Double totalAmount;
+
     private String status;
+
     private LocalDateTime orderDate;
 }

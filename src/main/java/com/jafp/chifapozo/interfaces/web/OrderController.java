@@ -2,14 +2,14 @@ package com.jafp.chifapozo.interfaces.web;
 
 import com.jafp.chifapozo.domain.model.Order;
 import com.jafp.chifapozo.domain.services.OrderService;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
 
 @RestController
-@AllArgsConstructor
+@RequiredArgsConstructor
 @RequestMapping("/api/orders")
 public class OrderController {
     private final OrderService orderService;

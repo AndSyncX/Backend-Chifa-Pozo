@@ -1,11 +1,10 @@
 package com.jafp.chifapozo.infrastructure.persistence.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-@Data
+@Getter
+@Setter
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
@@ -24,5 +23,6 @@ public class OrderItemEntity {
     private DishEntity dish;
 
     private Integer quantity;
+
     private Double price;
 }

@@ -1,9 +1,11 @@
 package com.jafp.chifapozo.domain.model;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 public class OrderItem {
     private Integer id;
